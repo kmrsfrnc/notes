@@ -1,6 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   ssr: false,
+  app: {
+    baseURL: '/notes/'
+  },
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   modules: [
@@ -28,7 +31,7 @@ export default defineNuxtConfig({
       ],
     },
     workbox: {
-      navigateFallback: '/',
+      navigateFallback: '/notes/',
     },
     devOptions: {
       enabled: true,

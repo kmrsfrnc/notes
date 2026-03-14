@@ -1,5 +1,7 @@
 # Nuxt 3 PWA Starter
 
+**Live Demo: [https://kmrsfrnc.github.io/notes/](https://kmrsfrnc.github.io/notes/)**
+
 A beautiful, single-page Progressive Web App (PWA) built with Nuxt 3, Vue.js, and Tailwind CSS. The app features a premium UI describing how users can install the PWA on their devices.
 
 ## Features

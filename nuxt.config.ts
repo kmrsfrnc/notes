@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     '@vite-pwa/nuxt'
   ],
   pwa: {
+    registerType: 'autoUpdate',
     manifest: {
       name: 'PWA Setup Guide',
       short_name: 'PWA Setup',
@@ -18,12 +19,12 @@ export default defineNuxtConfig({
       background_color: '#ffffff',
       icons: [
         {
-          src: '/icon-192x192.png',
+          src: '/notes/icon-192x192.png',
           sizes: '192x192',
           type: 'image/png',
         },
         {
-          src: '/icon-512x512.png',
+          src: '/notes/icon-512x512.png',
           sizes: '512x512',
           type: 'image/png',
           purpose: 'any maskable',
@@ -32,6 +33,7 @@ export default defineNuxtConfig({
     },
     workbox: {
       navigateFallback: '/notes/',
+      globPatterns: ['**/*.{js,css,html,png,svg,ico}'],
     },
     devOptions: {
       enabled: true,
